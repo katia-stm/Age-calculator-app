@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main>
+    <form action="#">
+      <div class="container">
+        <div class="datas">
+          <label for="dia" class="label-dia">Day</label>
+          <input type="number" name="dia" id="dia" placeholder="DD" maxlength="2">
+          <p class="msg-erro erro-dia">This field is required</p>
+        </div>
+        <div class="datas">
+          <label for="mes" class="label-mes">Month</label>
+          <input type="number" name="mes" id="mes" placeholder="MM" maxlength="2">
+          <p class="msg-erro erro-mes">This field is required</p>
+        </div>
+        <div class="datas">
+          <label for="ano" class="label-ano">Year</label>
+          <input type="number" name="ano" id="ano" placeholder="YYYY" maxlength="4">
+          <p class="msg-erro erro-ano">This field is required</p>
+        </div>
+      </div>
+      <div class="botao">
+        <button type="submit" class="enviar"><img src="assets/images/icon-arrow.svg" alt="arrow icon" class="icon-arrow"></button>
+      </div>
+    </form>
+    <section class="caixa">
+      <p class="resultados"><span class="qtde anos">- - </span><span class="anos-result">years</span></p>
+      <p class="resultados"><span class="qtde meses">- - </span><span class="meses-result">months</span></p>
+      <p class="resultados"><span class="qtde dias">- - </span><span class="dias-result">days</span></p>
+    </section>
+  </main> 
+  
+  <script src="script.js"></script>
+</body>
+</html>
